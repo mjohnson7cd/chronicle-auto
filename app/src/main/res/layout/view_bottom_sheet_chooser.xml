@@ -7,15 +7,15 @@
 
         <variable
             name="title"
-            type="io.github.mjohnson7cd.audiobook.views.BottomSheetChooser.FormattableString" />
+            type="io.github.mjohnson7cd.chronicleauto.views.BottomSheetChooser.FormattableString" />
 
         <variable
             name="options"
-            type="java.util.List&lt;io.github.mjohnson7cd.audiobook.views.BottomSheetChooser.FormattableString&gt;" />
+            type="java.util.List&lt;io.github.mjohnson7cd.chronicleauto.views.BottomSheetChooser.FormattableString&gt;" />
 
         <variable
             name="listener"
-            type="io.github.mjohnson7cd.audiobook.views.BottomSheetChooser.BottomChooserListener" />
+            type="io.github.mjohnson7cd.chronicleauto.views.BottomSheetChooser.BottomChooserListener" />
 
         <import type="android.view.View" />
     </data>

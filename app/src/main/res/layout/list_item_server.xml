@@ -6,11 +6,11 @@
 
         <variable
             name="server"
-            type="io.github.mjohnson7cd.audiobook.data.model.ServerModel" />
+            type="io.github.mjohnson7cd.chronicleauto.data.model.ServerModel" />
 
         <variable
             name="clickListener"
-            type="io.github.mjohnson7cd.audiobook.features.login.ServerClickListener" />
+            type="io.github.mjohnson7cd.chronicleauto.features.login.ServerClickListener" />
 
     </data>
 

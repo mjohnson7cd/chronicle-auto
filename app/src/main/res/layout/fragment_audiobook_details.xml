@@ -7,19 +7,19 @@
 
         <variable
             name="viewModel"
-            type="io.github.mjohnson7cd.audiobook.features.bookdetails.AudiobookDetailsViewModel" />
+            type="io.github.mjohnson7cd.chronicleauto.features.bookdetails.AudiobookDetailsViewModel" />
 
         <variable
             name="inputAudiobook"
-            type="io.github.mjohnson7cd.audiobook.data.model.Audiobook" />
+            type="io.github.mjohnson7cd.chronicleauto.data.model.Audiobook" />
 
         <variable
             name="plexConfig"
-            type="io.github.mjohnson7cd.audiobook.data.sources.plex.PlexConfig" />
+            type="io.github.mjohnson7cd.chronicleauto.data.sources.plex.PlexConfig" />
 
-        <import type="io.github.mjohnson7cd.audiobook.data.sources.plex.ICachedFileManager.CacheStatus" />
+        <import type="io.github.mjohnson7cd.chronicleauto.data.sources.plex.ICachedFileManager.CacheStatus" />
 
-        <import type="io.github.mjohnson7cd.audiobook.data.sources.plex.PlexConfig.ConnectionState" />
+        <import type="io.github.mjohnson7cd.chronicleauto.data.sources.plex.PlexConfig.ConnectionState" />
 
         <import type="android.view.View" />
     </data>
@@ -60,7 +60,7 @@
                         android:orientation="vertical"
                         app:layout_constraintGuide_end="@dimen/screen_horizontal_padding" />
 
-                    <io.github.mjohnson7cd.audiobook.views.ChronicleDraweeView
+                    <io.github.mjohnson7cd.chronicleauto.views.ChronicleDraweeView
                         android:id="@+id/details_artwork"
                         serverConnected="@{plexConfig.isConnected()}"
                         srcRounded="@{viewModel.audiobook.thumb}"
@@ -288,7 +288,7 @@
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-        <io.github.mjohnson7cd.audiobook.views.BottomSheetChooser
+        <io.github.mjohnson7cd.chronicleauto.views.BottomSheetChooser
             bottomChooserState="@{viewModel.bottomChooserState}"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

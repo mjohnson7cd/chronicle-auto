@@ -7,10 +7,10 @@
 
         <variable
             name="model"
-            type="io.github.mjohnson7cd.audiobook.features.settings.PreferenceModel" />
+            type="io.github.mjohnson7cd.chronicleauto.features.settings.PreferenceModel" />
 
         <import type="android.view.View" />
-        <import type="io.github.mjohnson7cd.audiobook.views.BottomSheetChooser.FormattableString.Companion" />
+        <import type="io.github.mjohnson7cd.chronicleauto.views.BottomSheetChooser.FormattableString.Companion" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

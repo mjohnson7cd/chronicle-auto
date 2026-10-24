@@ -7,11 +7,11 @@
 
         <variable
             name="user"
-            type="io.github.mjohnson7cd.audiobook.data.sources.plex.model.PlexUser" />
+            type="io.github.mjohnson7cd.chronicleauto.data.sources.plex.model.PlexUser" />
 
         <variable
             name="clickListener"
-            type="io.github.mjohnson7cd.audiobook.features.login.UserClickListener" />
+            type="io.github.mjohnson7cd.chronicleauto.features.login.UserClickListener" />
 
     </data>
 
@@ -24,7 +24,7 @@
         android:orientation="vertical"
         tools:layout_width="100dp">
 
-    <io.github.mjohnson7cd.audiobook.views.ChronicleDraweeView
+    <io.github.mjohnson7cd.chronicleauto.views.ChronicleDraweeView
             android:id="@+id/user_thumb"
             android:layout_width="match_parent"
             fresco:placeholderImage="@drawable/ic_person_white"

@@ -7,17 +7,17 @@
 
         <variable
             name="viewModel"
-            type="io.github.mjohnson7cd.audiobook.features.collections.CollectionsViewModel" />
+            type="io.github.mjohnson7cd.chronicleauto.features.collections.CollectionsViewModel" />
 
         <variable
             name="plexConfig"
-            type="io.github.mjohnson7cd.audiobook.data.sources.plex.PlexConfig" />
+            type="io.github.mjohnson7cd.chronicleauto.data.sources.plex.PlexConfig" />
 
         <import type="android.view.View" />
 
-        <import type="io.github.mjohnson7cd.audiobook.data.model.Collection" />
+        <import type="io.github.mjohnson7cd.chronicleauto.data.model.Collection" />
 
-        <import type="io.github.mjohnson7cd.audiobook.data.sources.plex.model.MediaTypes" />
+        <import type="io.github.mjohnson7cd.chronicleauto.data.sources.plex.model.MediaTypes" />
 
         <import type="androidx.recyclerview.widget.GridLayoutManager" />
 

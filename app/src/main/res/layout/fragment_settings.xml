@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="io.github.mjohnson7cd.audiobook.features.settings.SettingsViewModel" />
+            type="io.github.mjohnson7cd.chronicleauto.features.settings.SettingsViewModel" />
 
         <import type="android.view.View" />
     </data>
@@ -17,7 +17,7 @@
         android:layout_height="match_parent"
         android:background="@color/colorPrimaryDark">
 
-        <io.github.mjohnson7cd.audiobook.views.BottomSheetChooser
+        <io.github.mjohnson7cd.chronicleauto.views.BottomSheetChooser
             android:id="@+id/bottom_sheet_chooser"
             bottomChooserState="@{viewModel.bottomChooserState}"
             android:layout_width="match_parent"
@@ -29,7 +29,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:layout="@layout/view_bottom_sheet_chooser" />
 
-        <io.github.mjohnson7cd.audiobook.features.settings.SettingsList
+        <io.github.mjohnson7cd.chronicleauto.features.settings.SettingsList
             preferences="@{viewModel.preferences}"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

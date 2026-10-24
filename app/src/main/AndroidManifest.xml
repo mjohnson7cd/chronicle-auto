@@ -19,7 +19,7 @@
     <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
 
     <application
-        android:name="io.github.mjohnson7cd.audiobook.application.ChronicleApplication"
+        android:name="io.github.mjohnson7cd.chronicleauto.application.ChronicleApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -32,7 +32,7 @@
 
         <activity
             android:exported="true"
-            android:name="io.github.mjohnson7cd.audiobook.application.MainActivity"
+            android:name="io.github.mjohnson7cd.chronicleauto.application.MainActivity"
             android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,7 +44,7 @@
 
         <!-- OAuth deep link callback handler for Chrome Custom Tabs -->
         <activity
-            android:name="io.github.mjohnson7cd.audiobook.features.auth.AuthReturnActivity"
+            android:name="io.github.mjohnson7cd.chronicleauto.features.auth.AuthReturnActivity"
             android:exported="true"
             android:launchMode="singleTask"
             android:excludeFromRecents="true"
@@ -73,7 +73,7 @@
         </activity>
 
         <service
-            android:name="io.github.mjohnson7cd.audiobook.features.player.MediaPlayerService"
+            android:name="io.github.mjohnson7cd.chronicleauto.features.player.MediaPlayerService"
             android:enabled="true"
             android:exported="true"
             android:foregroundServiceType="mediaPlayback">

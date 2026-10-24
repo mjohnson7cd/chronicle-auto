@@ -6,11 +6,11 @@
 
         <variable
             name="library"
-            type="io.github.mjohnson7cd.audiobook.data.model.PlexLibrary" />
+            type="io.github.mjohnson7cd.chronicleauto.data.model.PlexLibrary" />
 
         <variable
             name="clickListener"
-            type="io.github.mjohnson7cd.audiobook.features.login.LibraryClickListener" />
+            type="io.github.mjohnson7cd.chronicleauto.features.login.LibraryClickListener" />
 
     </data>
 

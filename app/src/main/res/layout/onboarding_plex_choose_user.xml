@@ -7,11 +7,11 @@
 
         <variable
             name="viewModel"
-            type="io.github.mjohnson7cd.audiobook.features.login.ChooseUserViewModel" />
+            type="io.github.mjohnson7cd.chronicleauto.features.login.ChooseUserViewModel" />
 
         <import type="android.view.View" />
 
-        <import type="io.github.mjohnson7cd.audiobook.data.model.LoadingStatus" />
+        <import type="io.github.mjohnson7cd.chronicleauto.data.model.LoadingStatus" />
     </data>
 
 

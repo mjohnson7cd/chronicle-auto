@@ -6,7 +6,7 @@
     <data>
         <variable
             name="library"
-            type="io.github.mjohnson7cd.audiobook.data.model.Library" />
+            type="io.github.mjohnson7cd.chronicleauto.data.model.Library" />
 
         <variable
             name="accountName"

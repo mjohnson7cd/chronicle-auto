@@ -6,7 +6,7 @@
 
         <variable
             name="model"
-            type="io.github.mjohnson7cd.audiobook.features.settings.PreferenceModel" />
+            type="io.github.mjohnson7cd.chronicleauto.features.settings.PreferenceModel" />
 
     </data>
 

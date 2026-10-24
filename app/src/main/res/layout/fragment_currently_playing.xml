@@ -7,11 +7,11 @@
 
         <variable
             name="viewModel"
-            type="io.github.mjohnson7cd.audiobook.features.currentlyplaying.CurrentlyPlayingViewModel" />
+            type="io.github.mjohnson7cd.chronicleauto.features.currentlyplaying.CurrentlyPlayingViewModel" />
 
         <variable
             name="plexConfig"
-            type="io.github.mjohnson7cd.audiobook.data.sources.plex.PlexConfig" />
+            type="io.github.mjohnson7cd.chronicleauto.data.sources.plex.PlexConfig" />
 
         <import type="android.view.View" />
     </data>
@@ -272,7 +272,7 @@
                         android:orientation="vertical"
                         app:layout_constraintGuide_end="@dimen/screen_horizontal_padding" />
 
-                    <io.github.mjohnson7cd.audiobook.views.ChronicleDraweeView
+                    <io.github.mjohnson7cd.chronicleauto.views.ChronicleDraweeView
                         android:id="@+id/details_artwork"
                         serverConnected="@{plexConfig.isConnected()}"
                         srcRounded="@{viewModel.audiobook.thumb}"
@@ -344,14 +344,14 @@
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             app:layout_constraintTop_toTopOf="@id/tracks" />
 
-        <io.github.mjohnson7cd.audiobook.views.BottomSheetChooser
+        <io.github.mjohnson7cd.chronicleauto.views.BottomSheetChooser
             android:id="@+id/bottom_sheet_chooser"
             bottomChooserState="@{viewModel.bottomChooserState}"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:elevation="4dp" />
 
-        <io.github.mjohnson7cd.audiobook.views.BottomSheetChooser
+        <io.github.mjohnson7cd.chronicleauto.views.BottomSheetChooser
             android:id="@+id/sleep_timer_chooser"
             bottomChooserState="@{viewModel.sleepTimerChooserState}"
             android:layout_width="match_parent"

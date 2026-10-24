@@ -88,12 +88,11 @@ data class MediaItemTrack(
 
         /**
          * Merges updated local fields with a network copy of the book. Prefers network metadata,
-         * but always preserves local [progress] and [lastViewedAt] to avoid race conditions
-         * where sync operations overwrite in-progress playback.
+         * and preserves local [progress] and [lastViewedAt] unless the server saw a listen more
+         * than [REMOTE_PROGRESS_SLACK_MS] after our last local write (i.e. another device played it).
+         * The slack keeps our own 30s-stale timeline reports from rewinding in-progress playback.
          *
          * Always retains [cached] field from local copy.
-         *
-         * Note: Local device is the source of truth for playback progress.
          */
         fun merge(
             network: MediaItemTrack,
@@ -101,6 +100,9 @@ data class MediaItemTrack(
             forceUseNetwork: Boolean = false,
         ) = if (forceUseNetwork) {
             Timber.i("Force using network track: $network")
+            network.copy(cached = local.cached, artwork = local.artwork)
+        } else if (network.lastViewedAt > local.lastViewedAt + REMOTE_PROGRESS_SLACK_MS) {
+            Timber.i("Using newer server progress for ${network.id}: ${network.progress}ms (local ${local.progress}ms)")
             network.copy(cached = local.cached, artwork = local.artwork)
         } else {
             // Always preserve local progress, lastViewedAt, and artwork (cached cover URI)
@@ -130,13 +132,17 @@ data class MediaItemTrack(
                 progress = networkTrack.viewOffset,
                 media = networkTrack.media[0].part[0].key,
                 album = networkTrack.parentTitle,
-                lastViewedAt = networkTrack.lastViewedAt,
+                // Plex sends epoch seconds; local writes use System.currentTimeMillis()
+                lastViewedAt = networkTrack.lastViewedAt * 1000,
                 updatedAt = networkTrack.updatedAt,
                 size = networkTrack.media[0].part[0].size,
             )
         }
 
         const val PARENT_KEY_PREFIX = "/library/metadata/"
+
+        /** shortcut: assumes device/server clocks agree within this window; widen if skewed clocks rewind playback */
+        const val REMOTE_PROGRESS_SLACK_MS = 60_000L
     }
 
     /** The name of the track when it is written to the file system */

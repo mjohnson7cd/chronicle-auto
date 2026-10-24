@@ -800,6 +800,13 @@ class AudiobookMediaSessionCallback
             serviceScope.launch {
                 val tracks =
                     withContext(Dispatchers.IO) {
+                        // Car/Auto has no details screen to refresh tracks before play, so pull
+                        // server progress here; otherwise a position saved on another device is ignored.
+                        if (startTimeOffsetMillis == USE_SAVED_TRACK_PROGRESS && plexConfig.isConnected.value == true) {
+                            bookRepository.getAudiobookAsync(bookId)?.let { book ->
+                                withTimeoutOrNull(5_000L) { trackRepository.loadTracksForAudiobook(bookId, book.libraryId) }
+                            }
+                        }
                         trackRepository.getTracksForAudiobookAsync(bookId)
                     }
                 if (tracks.isEmpty()) {

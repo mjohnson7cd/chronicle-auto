@@ -285,10 +285,11 @@
     <string name="not_logged_in_explanation">Log in to Plex to see your library</string>
     <string name="no_server_chosen">No server chosen</string>
     <string name="no_server_chosen_explanation">Android Auto can\'t access your files until you pick a. Open the app when it is safe and log in fully.</string>
-    <string name="auto_category_recently_listened">Recently listened</string>
-    <string name="auto_category_recently_added">Recently added</string>
+    <string name="auto_category_recently_listened">Continue</string>
     <string name="auto_category_offline">Offline</string>
+    <string name="auto_category_favorites">Favorites</string>
     <string name="auto_category_library">Library</string>
+    <string name="auto_favorites_empty">No favorites yet</string>
     <string name="auto_access_error_not_logged_in">Not logged in to Chronicle</string>
     <string name="auto_not_logged_in_subtitle">Open Audiobook Auto on your phone to log in</string>
     <string name="auto_access_error_no_server_chosen">No server chosen. Please return to Chronicle and choose a server and library</string>

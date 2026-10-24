@@ -213,14 +213,6 @@ interface BookDao {
         offlineModeActive: Boolean,
     ): LiveData<List<Audiobook>>
 
-    @Query(
-        "SELECT * FROM Audiobook WHERE isCached >= :offlineModeActive ORDER BY addedAt DESC LIMIT :bookCount",
-    )
-    suspend fun getRecentlyAddedAsync(
-        bookCount: Int,
-        offlineModeActive: Boolean,
-    ): List<Audiobook>
-
     @Query("SELECT * FROM Audiobook ORDER BY updatedAt DESC LIMIT 25")
     fun getOnDeck(): LiveData<List<Audiobook>>
 
@@ -326,6 +318,18 @@ interface BookDao {
 
     @Query("UPDATE Audiobook SET viewCount = 0 WHERE id = :bookId")
     suspend fun setUnwatched(bookId: String)
+
+    @Query("UPDATE Audiobook SET favorited = :favorited WHERE id = :bookId")
+    suspend fun setFavorited(
+        bookId: String,
+        favorited: Boolean,
+    )
+
+    @Query("SELECT * FROM Audiobook WHERE favorited = 1 ORDER BY titleSort")
+    fun getFavoriteAudiobooks(): LiveData<List<Audiobook>>
+
+    @Query("SELECT * FROM Audiobook WHERE favorited = 1 ORDER BY titleSort")
+    suspend fun getFavoriteAudiobooksAsync(): List<Audiobook>
 
     // Library-scoped DAO methods
     @Query("SELECT * FROM Audiobook WHERE libraryId = :libraryId")

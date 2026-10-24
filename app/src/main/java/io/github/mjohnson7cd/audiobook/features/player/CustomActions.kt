@@ -15,13 +15,14 @@ import io.github.mjohnson7cd.audiobook.data.sources.plex.ICachedFileManager.Cach
 // Order matters: with no ACTION_SKIP_TO_NEXT/PREVIOUS, car UIs put the first two custom actions
 // next to play (-10s | play | +30s). AAOS's ControlBar then fills the outer-left slot with the next
 // action and turns outer-right into ⋮, so a blank spacer holds outer-left and everything after it
-// lands in the overflow menu: download, prev chapter, next chapter, speed.
+// lands in the overflow menu: download, prev chapter, next chapter, speed, favorite.
 // The trailing spacer keeps ⋮ in its slot while the car briefly re-lays out the bar on each state
 // push (it drops -10/+30 then re-adds them); without it the open overflow row goes blank.
 fun buildCustomActions(
     prefsRepo: PrefsRepo,
     downloadStatus: CacheStatus = CacheStatus.NOT_CACHED,
     downloadPercent: Int = 0,
+    favorited: Boolean = false,
 ): List<PlaybackStateCompat.CustomAction> =
     listOfNotNull(
         makeSkipBackward(prefsRepo),
@@ -31,8 +32,19 @@ fun buildCustomActions(
         SKIP_TO_PREVIOUS,
         SKIP_TO_NEXT,
         makePlaybackSpeed(prefsRepo),
+        if (BuildConfig.IS_AUTOMOTIVE) makeFavorite(favorited) else null,
         if (BuildConfig.IS_AUTOMOTIVE) CAR_SLOT_SPACER_END else null,
     )
+
+const val FAVORITE_STRING = "Favorite"
+
+/** Car overflow favorite toggle; filled heart when the playing book is a favorite. */
+fun makeFavorite(favorited: Boolean): PlaybackStateCompat.CustomAction =
+    if (favorited) {
+        PlaybackStateCompat.CustomAction.Builder(FAVORITE_STRING, "Remove from favorites", R.drawable.ic_favorite_white)
+    } else {
+        PlaybackStateCompat.CustomAction.Builder(FAVORITE_STRING, "Add to favorites", R.drawable.ic_favorite_border_white)
+    }.build()
 
 const val DOWNLOAD_BOOK_STRING = "Download book"
 

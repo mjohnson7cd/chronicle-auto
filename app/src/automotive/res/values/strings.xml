@@ -52,6 +52,8 @@
     <string name="car_settings_jump_forward">Skip forward</string>
     <string name="car_settings_jump_backward">Skip back</string>
     <string name="car_settings_speed">Playback speed</string>
+    <string name="car_on">On</string>
+    <string name="car_off">Off</string>
     <string name="car_settings_sync_now">Sync library now</string>
     <string name="car_settings_sync_started">Library sync started</string>
     <string name="car_settings_syncing">Syncing library…</string>

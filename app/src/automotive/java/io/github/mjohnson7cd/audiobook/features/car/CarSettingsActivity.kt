@@ -46,6 +46,7 @@ class CarSettingsActivity : AppCompatActivity() {
     private lateinit var jumpForward: Button
     private lateinit var jumpBackward: Button
     private lateinit var speed: Button
+    private lateinit var pauseOnInterruption: Button
     private lateinit var storageStatus: TextView
     private lateinit var deleteDownloads: Button
     private lateinit var deleteProgress: ProgressBar
@@ -69,6 +70,7 @@ class CarSettingsActivity : AppCompatActivity() {
         jumpForward = findViewById(R.id.car_settings_jump_forward)
         jumpBackward = findViewById(R.id.car_settings_jump_backward)
         speed = findViewById(R.id.car_settings_speed)
+        pauseOnInterruption = findViewById(R.id.car_settings_pause_on_focus_lost)
         storageStatus = findViewById(R.id.car_settings_storage_status)
         deleteDownloads = findViewById(R.id.car_settings_delete_downloads)
         deleteProgress = findViewById(R.id.car_settings_delete_progress)
@@ -106,6 +108,11 @@ class CarSettingsActivity : AppCompatActivity() {
         }
         jumpBackward.setOnClickListener {
             prefsRepo.jumpBackwardSeconds = nextOf(JUMP_OPTIONS_SECONDS, prefsRepo.jumpBackwardSeconds)
+            renderPlayback()
+        }
+        // MediaPlayerService's prefs listener reapplies the audio attributes (speech = pause on focus loss).
+        pauseOnInterruption.setOnClickListener {
+            prefsRepo.pauseOnFocusLost = !prefsRepo.pauseOnFocusLost
             renderPlayback()
         }
         speed.setOnClickListener { startActivity(android.content.Intent(this, CarPlaybackSpeedActivity::class.java)) }
@@ -247,6 +254,9 @@ class CarSettingsActivity : AppCompatActivity() {
             getString(R.string.car_settings_jump_backward) + ": " +
             getString(R.string.car_seconds, prefsRepo.jumpBackwardSeconds.toInt())
         speed.text = getString(R.string.car_settings_speed) + ": " + formatSpeed(prefsRepo.playbackSpeed)
+        pauseOnInterruption.text =
+            getString(R.string.settings_pause_on_focus_lost_title) + ": " +
+            getString(if (prefsRepo.pauseOnFocusLost) R.string.car_on else R.string.car_off)
     }
 
     private fun openSignIn() {

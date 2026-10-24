@@ -629,6 +629,15 @@ class AudiobookMediaSessionCallback
                 // MediaPlayerService's prefs listener applies the speed and refreshes the icon.
                 PLAYBACK_SPEED_STRING -> prefsRepo.playbackSpeed = nextPlaybackSpeed(prefsRepo.playbackSpeed)
                 DOWNLOAD_BOOK_STRING -> downloadCurrentBook()
+                // MediaPlayerService observes favorites and refreshes the heart icon.
+                FAVORITE_STRING -> {
+                    val bookId = currentlyPlaying.book.value.id
+                    if (bookId == NO_AUDIOBOOK_FOUND_ID) return
+                    serviceScope.launch(coroutineExceptionHandler) {
+                        val favorited = bookRepository.getAudiobookAsync(bookId)?.favorited ?: return@launch
+                        bookRepository.setFavorited(bookId, !favorited)
+                    }
+                }
             }
         }
 

@@ -132,6 +132,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
+        <Button
+            android:id="@+id/car_settings_pause_on_focus_lost"
+            style="@style/CarButton.Outlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
         <TextView
             style="@style/CarText.Body"
             android:layout_width="wrap_content"

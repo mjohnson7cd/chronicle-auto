@@ -65,8 +65,6 @@ interface IBookRepository {
      */
     fun getRecentlyAdded(): LiveData<List<Audiobook>>
 
-    suspend fun getRecentlyAddedAsync(): List<Audiobook>
-
     /**
      * Returns the [getBookCount] most recently added listened to books in the local database,
      * ordered from most recently listened to last listened book
@@ -150,6 +148,16 @@ interface IBookRepository {
     suspend fun setWatched(bookId: String)
 
     suspend fun setUnwatched(bookId: String)
+
+    /** Local-only (Plex has no audiobook favorites); [Audiobook.merge] keeps it across syncs. */
+    suspend fun setFavorited(
+        bookId: String,
+        favorited: Boolean,
+    )
+
+    fun getFavoriteAudiobooks(): LiveData<List<Audiobook>>
+
+    suspend fun getFavoriteAudiobooksAsync(): List<Audiobook>
 
     /** Loads an [Audiobook] in from the network */
     suspend fun fetchBookAsync(
@@ -344,12 +352,6 @@ class BookRepository
             return bookDao.getRecentlyAdded(limitReturnCount, prefsRepo.offlineMode)
         }
 
-        override suspend fun getRecentlyAddedAsync(): List<Audiobook> {
-            return withContext(Dispatchers.IO) {
-                bookDao.getRecentlyAddedAsync(limitReturnCount, prefsRepo.offlineMode)
-            }
-        }
-
         override fun getRecentlyListened(): LiveData<List<Audiobook>> {
             return bookDao.getRecentlyListened(limitReturnCount, prefsRepo.offlineMode)
         }
@@ -465,6 +467,16 @@ class BookRepository
                 bookDao.getAudiobookAsync(bookId)
             }
         }
+
+        override suspend fun setFavorited(
+            bookId: String,
+            favorited: Boolean,
+        ) = withContext(Dispatchers.IO) { bookDao.setFavorited(bookId, favorited) }
+
+        override fun getFavoriteAudiobooks(): LiveData<List<Audiobook>> = bookDao.getFavoriteAudiobooks()
+
+        override suspend fun getFavoriteAudiobooksAsync(): List<Audiobook> =
+            withContext(Dispatchers.IO) { bookDao.getFavoriteAudiobooksAsync() }
 
         override fun getCachedAudiobooks(): LiveData<List<Audiobook>> {
             return bookDao.getCachedAudiobooks()

@@ -150,6 +150,16 @@ class MediaPlayerService :
             refreshCarDownloadStatus()
         }
     private val carCachedBooksLiveData by lazy { bookRepository.getCachedAudiobooks() }
+    private var carFavoriteBookIds: Set<String> = emptySet()
+    private val carFavoritesObserver =
+        Observer<List<io.github.mjohnson7cd.audiobook.data.model.Audiobook>> { books ->
+            val ids = books.map { it.id }.toSet()
+            if (ids == carFavoriteBookIds) return@Observer
+            carFavoriteBookIds = ids
+            updateCustomActions()
+            notifyChildrenChanged(getString(R.string.auto_category_favorites))
+        }
+    private val carFavoritesLiveData by lazy { bookRepository.getFavoriteAudiobooks() }
 
     @Inject
     lateinit var plexPrefs: PlexPrefsRepo
@@ -401,6 +411,7 @@ class MediaPlayerService :
             cachedFileManager.activeBookDownloads.observeForever(carActiveDownloadsObserver)
             cachedFileManager.bookDownloadProgress.observeForever(carDownloadProgressObserver)
             carCachedBooksLiveData.observeForever(carCachedBooksObserver)
+            carFavoritesLiveData.observeForever(carFavoritesObserver)
             serviceScope.launch(Injector.get().unhandledExceptionHandler()) {
                 currentlyPlaying.book.collect { refreshCarDownloadStatus() }
             }
@@ -420,7 +431,9 @@ class MediaPlayerService :
     }
 
     private fun updateCustomActions() {
-        sessionCustomActions = buildCustomActions(prefsRepo, carDownloadStatus, carDownloadPercentStep)
+        // Book changes reach here via refreshCarDownloadStatus (it pushes whenever the book id changes).
+        val favorited = currentlyPlaying.book.value.id in carFavoriteBookIds
+        sessionCustomActions = buildCustomActions(prefsRepo, carDownloadStatus, carDownloadPercentStep, favorited)
         updateSessionPlaybackState()
     }
 
@@ -636,7 +649,6 @@ class MediaPlayerService :
             if (!isRefreshing) {
                 Timber.d("[AndroidAuto] Library sync completed, refreshing browse tree")
                 notifyChildrenChanged(CHRONICLE_MEDIA_ROOT_ID)
-                notifyChildrenChanged(getString(R.string.auto_category_recently_added))
                 notifyChildrenChanged(getString(R.string.auto_category_library))
                 notifyChildrenChanged(getString(R.string.auto_category_recently_listened))
                 notifyChildrenChanged(getString(R.string.auto_category_offline))
@@ -969,6 +981,7 @@ class MediaPlayerService :
             cachedFileManager.activeBookDownloads.removeObserver(carActiveDownloadsObserver)
             cachedFileManager.bookDownloadProgress.removeObserver(carDownloadProgressObserver)
             carCachedBooksLiveData.removeObserver(carCachedBooksObserver)
+            carFavoritesLiveData.removeObserver(carFavoritesObserver)
         }
 
         // Send one last update to local/remote servers that playback has stopped
@@ -1193,8 +1206,8 @@ class MediaPlayerService :
 
                             tabs.add(
                                 makeBrowsable(
-                                    getString(R.string.auto_category_recently_added),
-                                    R.drawable.ic_add,
+                                    getString(R.string.auto_category_favorites),
+                                    R.drawable.ic_favorite_white,
                                 ),
                             )
 
@@ -1224,17 +1237,6 @@ class MediaPlayerService :
                             Timber.d("[AndroidAuto] Loaded ${items.size} recently listened items")
                             result.sendResult(items)
                         }
-                        getString(R.string.auto_category_recently_added) -> {
-                            Timber.d("[AndroidAuto] Loading recently added")
-                            val recentlyAdded = bookRepository.getRecentlyAddedAsync()
-                            val items =
-                                recentlyAdded
-                                    .filterNotNull()
-                                    .map { it.toMediaItem(plexConfig, applicationContext) }
-                                    .toMutableList()
-                            Timber.d("[AndroidAuto] Loaded ${items.size} recently added items")
-                            result.sendResult(items)
-                        }
                         getString(R.string.auto_category_library) -> {
                             Timber.d("[AndroidAuto] Loading full library")
                             val books = bookRepository.getAllBooksAsync()
@@ -1244,6 +1246,22 @@ class MediaPlayerService :
                                     .map { it.toMediaItem(plexConfig, applicationContext) }
                                     .toMutableList()
                             Timber.d("[AndroidAuto] Loaded ${items.size} library items")
+                            result.sendResult(items)
+                        }
+                        getString(R.string.auto_category_favorites) -> {
+                            val items =
+                                bookRepository.getFavoriteAudiobooksAsync()
+                                    .map { it.toMediaItem(plexConfig, applicationContext) }
+                                    .toMutableList()
+                            if (items.isEmpty()) {
+                                items.add(
+                                    makeMessageItem(
+                                        title = getString(R.string.auto_favorites_empty),
+                                        iconRes = R.drawable.ic_favorite_white,
+                                        mediaId = "__favorites_empty__",
+                                    ),
+                                )
+                            }
                             result.sendResult(items)
                         }
                         getString(R.string.auto_category_offline) -> {

@@ -29,8 +29,8 @@ android {
         applicationId = "io.github.mjohnson7cd.chronicleauto"
         minSdk = 30
         targetSdk = 36
-        versionCode = 69
-        versionName = "0.62.6"
+        versionCode = 70
+        versionName = "0.62.7"
 
         testInstrumentationRunner = "io.github.mjohnson7cd.chronicleauto.application.ChronicleTestRunner"
 

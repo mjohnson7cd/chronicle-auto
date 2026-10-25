@@ -58,7 +58,7 @@
 
         <!-- Phone UI stays in the APK (shared code) but is not launchable: no launcher filter. -->
         <activity
-            android:name="io.github.mjohnson7cd.audiobook.application.MainActivity"
+            android:name="io.github.mjohnson7cd.chronicleauto.application.MainActivity"
             android:exported="false"
             tools:replace="android:exported">
             <intent-filter tools:node="removeAll" />
@@ -66,7 +66,7 @@
 
         <!-- Browser OAuth return is unreachable in the car (no browser); sign-in uses plex.tv/link. -->
         <activity
-            android:name="io.github.mjohnson7cd.audiobook.features.auth.AuthReturnActivity"
+            android:name="io.github.mjohnson7cd.chronicleauto.features.auth.AuthReturnActivity"
             tools:node="remove" />
 
         <!--
@@ -74,7 +74,7 @@
           distractionOptimized meta-data. Launched as the MediaSession error-resolution intent.
         -->
         <activity
-            android:name="io.github.mjohnson7cd.audiobook.features.car.CarSignInActivity"
+            android:name="io.github.mjohnson7cd.chronicleauto.features.car.CarSignInActivity"
             android:exported="false"
             android:label="@string/car_sign_in_title"
             android:launchMode="singleTask"
@@ -82,7 +82,7 @@
 
         <!-- Car settings, reachable from the media center's settings button. Parked-only. -->
         <activity
-            android:name="io.github.mjohnson7cd.audiobook.features.car.CarSettingsActivity"
+            android:name="io.github.mjohnson7cd.chronicleauto.features.car.CarSettingsActivity"
             android:exported="true"
             android:label="@string/car_settings_title"
             android:theme="@style/CarTheme">
@@ -97,7 +97,7 @@
           no text entry) so it stays usable if the car starts moving while it is open.
         -->
         <activity
-            android:name="io.github.mjohnson7cd.audiobook.features.car.CarPlaybackSpeedActivity"
+            android:name="io.github.mjohnson7cd.chronicleauto.features.car.CarPlaybackSpeedActivity"
             android:exported="false"
             android:label="@string/car_settings_speed"
             android:theme="@style/CarDialogTheme">
@@ -108,7 +108,7 @@
 
         <!-- Serves cached cover art to the car media center (separate process). Read-only. -->
         <provider
-            android:name="io.github.mjohnson7cd.audiobook.features.car.CoverArtProvider"
+            android:name="io.github.mjohnson7cd.chronicleauto.features.car.CoverArtProvider"
             android:authorities="${applicationId}.coverart"
             android:exported="true" />
     </application>

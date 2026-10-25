@@ -32,8 +32,8 @@
 -keep,allowobfuscation,allowshrinking class kotlin.coroutines.Continuation
 
 # Keep all Retrofit service interfaces
--keep interface io.github.mjohnson7cd.audiobook.data.sources.plex.PlexLoginService { *; }
--keep interface io.github.mjohnson7cd.audiobook.data.sources.plex.PlexMediaService { *; }
+-keep interface io.github.mjohnson7cd.chronicleauto.data.sources.plex.PlexLoginService { *; }
+-keep interface io.github.mjohnson7cd.chronicleauto.data.sources.plex.PlexMediaService { *; }
 
 # Keep HTTP method annotations
 -keepclassmembers,allowshrinking,allowobfuscation interface * {
@@ -56,8 +56,8 @@
 }
 
 # Keep all Plex model classes (critical for API serialization)
--keep class io.github.mjohnson7cd.audiobook.data.sources.plex.model.** { *; }
--keepclassmembers class io.github.mjohnson7cd.audiobook.data.sources.plex.model.** { *; }
+-keep class io.github.mjohnson7cd.chronicleauto.data.sources.plex.model.** { *; }
+-keepclassmembers class io.github.mjohnson7cd.chronicleauto.data.sources.plex.model.** { *; }
 
 # Moshi reflection adapters
 -keep class com.squareup.moshi.** { *; }
@@ -87,7 +87,7 @@
 }
 
 # Keep all data classes in data.model package
--keep class io.github.mjohnson7cd.audiobook.data.model.** { *; }
+-keep class io.github.mjohnson7cd.chronicleauto.data.model.** { *; }
 
 # ================================
 # Dagger 2
@@ -131,7 +131,7 @@
 -keep class * extends androidx.work.ListenableWorker {
     public <init>(...);
 }
--keep class io.github.mjohnson7cd.audiobook.data.sources.plex.PlexSyncScrobbleWorker { *; }
+-keep class io.github.mjohnson7cd.chronicleauto.data.sources.plex.PlexSyncScrobbleWorker { *; }
 
 # ================================
 # General Android

@@ -6,7 +6,7 @@
     <data>
         <variable
             name="viewModel"
-            type="io.github.mjohnson7cd.audiobook.features.account.AccountListViewModel" />
+            type="io.github.mjohnson7cd.chronicleauto.features.account.AccountListViewModel" />
 
         <import type="android.view.View" />
     </data>

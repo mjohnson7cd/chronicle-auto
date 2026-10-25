@@ -7,11 +7,11 @@
 
         <variable
             name="collection"
-            type="io.github.mjohnson7cd.audiobook.data.model.Collection" />
+            type="io.github.mjohnson7cd.chronicleauto.data.model.Collection" />
 
         <variable
             name="collectionClick"
-            type="io.github.mjohnson7cd.audiobook.features.collections.CollectionsFragment.CollectionClick" />
+            type="io.github.mjohnson7cd.chronicleauto.features.collections.CollectionsFragment.CollectionClick" />
 
         <import type="android.view.View" />
 

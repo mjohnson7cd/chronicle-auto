@@ -7,7 +7,7 @@
         errorLine1="                    notificationManager.notify(result.bookName.hashCode(), notification)"
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/download/DownloadNotificationWorker.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/download/DownloadNotificationWorker.kt"
             line="158"
             column="21"/>
     </issue>
@@ -18,7 +18,7 @@
         errorLine1="                    notificationManager.notify(DOWNLOADS_FINISHED_NOTIF_SUMMARY_ID, summary)"
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/download/DownloadNotificationWorker.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/download/DownloadNotificationWorker.kt"
             line="164"
             column="21"/>
     </issue>
@@ -29,7 +29,7 @@
         errorLine1="                    notificationManager.notify(bookId, notification)"
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/download/DownloadNotificationWorker.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/download/DownloadNotificationWorker.kt"
             line="365"
             column="21"/>
     </issue>
@@ -40,7 +40,7 @@
         errorLine1="        notificationManager.notify(TRANSFER_ERROR_NOTIF_ID, notif)"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/download/MoveSyncLocationWorker.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/download/MoveSyncLocationWorker.kt"
             line="72"
             column="9"/>
     </issue>
@@ -51,7 +51,7 @@
         errorLine1="                        notificationManager.notify(NOW_PLAYING_NOTIFICATION, notification)"
         errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/OnMediaChangedCallback.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/OnMediaChangedCallback.kt"
             line="109"
             column="25"/>
     </issue>
@@ -62,7 +62,7 @@
         errorLine1="                        notificationManager.notify(NOW_PLAYING_NOTIFICATION, notification)"
         errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/OnMediaChangedCallback.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/OnMediaChangedCallback.kt"
             line="119"
             column="25"/>
     </issue>
@@ -73,7 +73,7 @@
         errorLine1="            return@map String.format(&quot;%.2f&quot;, speed) + &quot;x&quot;"
         errorLine2="                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/currentlyplaying/CurrentlyPlayingViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/currentlyplaying/CurrentlyPlayingViewModel.kt"
             line="149"
             column="24"/>
     </issue>
@@ -84,7 +84,7 @@
         errorLine1="            String.format(&quot;%.2f&quot;, value) + &quot;x&quot;"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/views/ModalBottomSheetSpeedChooser.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/views/ModalBottomSheetSpeedChooser.kt"
             line="51"
             column="13"/>
     </issue>
@@ -111,11 +111,11 @@
         errorLine1="            handler.removeCallbacks(updateProgressAction)"
         errorLine2="                                    ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/ProgressUpdater.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/ProgressUpdater.kt"
             line="242"
             column="37"/>
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/ProgressUpdater.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/ProgressUpdater.kt"
             line="107"
             column="33"
             message="Different instance than the one for `removeCallbacks()` due to SAM conversion; wrap with a shared `Runnable`"/>
@@ -127,7 +127,7 @@
         errorLine1="    observe(owner) { it.getContentIfNotHandled()?.let(onEventUnhandledContent) }"
         errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/util/LifecycleExt.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/util/LifecycleExt.kt"
             line="11"
             column="5"/>
     </issue>
@@ -138,7 +138,7 @@
         errorLine1="        serviceJob.cancel()"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/MediaPlayerService.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/MediaPlayerService.kt"
             line="483"
             column="9"/>
     </issue>
@@ -149,7 +149,7 @@
         errorLine1="        serviceJob.cancel()"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/MediaPlayerService.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/MediaPlayerService.kt"
             line="515"
             column="9"/>
     </issue>
@@ -160,7 +160,7 @@
         errorLine1="                while (deferredConnections.any { it.isActive }) {"
         errorLine2="                                                    ~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/sources/plex/PlexConfig.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/sources/plex/PlexConfig.kt"
             line="250"
             column="53"/>
     </issue>
@@ -578,7 +578,7 @@
         errorLine1="                dataSourceFactory.setDefaultRequestProperties("
         errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/AudiobookMediaSessionCallback.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/AudiobookMediaSessionCallback.kt"
             line="372"
             column="35"/>
     </issue>
@@ -589,7 +589,7 @@
         errorLine1="                        player.setMediaSources(mediaSources)"
         errorLine2="                               ~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/AudiobookMediaSessionCallback.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/AudiobookMediaSessionCallback.kt"
             line="385"
             column="32"/>
     </issue>
@@ -600,7 +600,7 @@
         errorLine1="fun MediaMetadataCompat.toMediaSource(dataSourceFactory: DataSource.Factory): ProgressiveMediaSource {"
         errorLine2="                                                                              ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/MediaMetadataCompatExt.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/MediaMetadataCompatExt.kt"
             line="273"
             column="79"/>
     </issue>
@@ -611,7 +611,7 @@
         errorLine1="    return ProgressiveMediaSource.Factory(dataSourceFactory)"
         errorLine2="                                  ~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/MediaMetadataCompatExt.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/MediaMetadataCompatExt.kt"
             line="274"
             column="35"/>
     </issue>
@@ -622,7 +622,7 @@
         errorLine1="        .createMediaSource("
         errorLine2="         ~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/MediaMetadataCompatExt.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/MediaMetadataCompatExt.kt"
             line="275"
             column="10"/>
     </issue>
@@ -633,7 +633,7 @@
         errorLine1="): List&lt;ProgressiveMediaSource> {"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/MediaMetadataCompatExt.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/MediaMetadataCompatExt.kt"
             line="307"
             column="9"/>
     </issue>
@@ -644,7 +644,7 @@
         errorLine1="        (currentPlayer as? ExoPlayer)?.skipSilenceEnabled = prefsRepo.skipSilence"
         errorLine2="                                       ~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/MediaPlayerService.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/MediaPlayerService.kt"
             line="372"
             column="40"/>
     </issue>
@@ -655,7 +655,7 @@
         errorLine1="        ExoPlayer.Builder(service).setLoadControl("
         errorLine2="                                   ~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/injection/modules/ServiceModule.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/injection/modules/ServiceModule.kt"
             line="58"
             column="36"/>
     </issue>
@@ -666,7 +666,7 @@
         errorLine1="            DefaultLoadControl.Builder().setBackBuffer(EXOPLAYER_BACK_BUFFER_DURATION_MILLIS, true)"
         errorLine2="                               ~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/injection/modules/ServiceModule.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/injection/modules/ServiceModule.kt"
             line="60"
             column="32"/>
     </issue>
@@ -677,7 +677,7 @@
         errorLine1="            DefaultLoadControl.Builder().setBackBuffer(EXOPLAYER_BACK_BUFFER_DURATION_MILLIS, true)"
         errorLine2="                                         ~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/injection/modules/ServiceModule.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/injection/modules/ServiceModule.kt"
             line="60"
             column="42"/>
     </issue>
@@ -688,7 +688,7 @@
         errorLine1="                .setBufferDurationsMs("
         errorLine2="                 ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/injection/modules/ServiceModule.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/injection/modules/ServiceModule.kt"
             line="61"
             column="18"/>
     </issue>
@@ -699,7 +699,7 @@
         errorLine1="                    DefaultLoadControl.DEFAULT_BUFFER_FOR_PLAYBACK_MS,"
         errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/injection/modules/ServiceModule.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/injection/modules/ServiceModule.kt"
             line="64"
             column="40"/>
     </issue>
@@ -710,7 +710,7 @@
         errorLine1="                    DefaultLoadControl.DEFAULT_BUFFER_FOR_PLAYBACK_AFTER_REBUFFER_MS,"
         errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/injection/modules/ServiceModule.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/injection/modules/ServiceModule.kt"
             line="65"
             column="40"/>
     </issue>
@@ -721,7 +721,7 @@
         errorLine1="                .build(),"
         errorLine2="                 ~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/injection/modules/ServiceModule.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/injection/modules/ServiceModule.kt"
             line="67"
             column="18"/>
     </issue>
@@ -732,7 +732,7 @@
         errorLine1="        dataSourceFactory.setUserAgent(Util.getUserAgent(service, APP_NAME))"
         errorLine2="                          ~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/injection/modules/ServiceModule.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/injection/modules/ServiceModule.kt"
             line="134"
             column="27"/>
     </issue>
@@ -743,7 +743,7 @@
         errorLine1="        dataSourceFactory.setUserAgent(Util.getUserAgent(service, APP_NAME))"
         errorLine2="                                            ~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/injection/modules/ServiceModule.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/injection/modules/ServiceModule.kt"
             line="134"
             column="45"/>
     </issue>
@@ -754,7 +754,7 @@
         errorLine1="        dataSourceFactory.setDefaultRequestProperties("
         errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/injection/modules/ServiceModule.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/injection/modules/ServiceModule.kt"
             line="136"
             column="27"/>
     </issue>
@@ -765,7 +765,7 @@
         errorLine1="                        resources.getDrawable("
         errorLine2="                        ^">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/login/LoginFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/login/LoginFragment.kt"
             line="92"
             column="25"/>
     </issue>
@@ -842,7 +842,7 @@
         errorLine1="            notifyDataSetChanged()"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/library/AudiobookAdapter.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/library/AudiobookAdapter.kt"
             line="34"
             column="13"/>
     </issue>
@@ -853,7 +853,7 @@
         errorLine1="        notifyDataSetChanged()"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/library/AudiobookAdapter.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/library/AudiobookAdapter.kt"
             line="87"
             column="9"/>
     </issue>
@@ -864,7 +864,7 @@
         errorLine1="        notifyDataSetChanged()"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/library/AudiobookSearchAdapter.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/library/AudiobookSearchAdapter.kt"
             line="32"
             column="9"/>
     </issue>
@@ -875,7 +875,7 @@
         errorLine1="    adapter.notifyDataSetChanged()"
         errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/views/BottomSheetChooserBindingAdapters.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/views/BottomSheetChooserBindingAdapters.kt"
             line="56"
             column="5"/>
     </issue>
@@ -886,7 +886,7 @@
         errorLine1="            notifyDataSetChanged()"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/collections/CollectionsAdapter.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/collections/CollectionsAdapter.kt"
             line="32"
             column="13"/>
     </issue>
@@ -897,7 +897,7 @@
         errorLine1="        notifyDataSetChanged()"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/collections/CollectionsAdapter.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/collections/CollectionsAdapter.kt"
             line="85"
             column="9"/>
     </issue>
@@ -908,7 +908,7 @@
         errorLine1="@RequiresApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)"
         errorLine2="~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/views/BindingAdapters.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/views/BindingAdapters.kt"
             line="87"
             column="1"/>
     </issue>
@@ -919,7 +919,7 @@
         errorLine1="        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/application/ChronicleApplication.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/application/ChronicleApplication.kt"
             line="139"
             column="13"/>
     </issue>
@@ -930,7 +930,7 @@
         errorLine1="val mediaSkipForwardCode = if (Build.VERSION.SDK_INT >= M) KEYCODE_MEDIA_SKIP_FORWARD else 272"
         errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/CustomActions.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/CustomActions.kt"
             line="80"
             column="32"/>
     </issue>
@@ -941,7 +941,7 @@
         errorLine1="val mediaSkipBackwardCode = if (Build.VERSION.SDK_INT >= M) KEYCODE_MEDIA_SKIP_BACKWARD else 273"
         errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/CustomActions.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/CustomActions.kt"
             line="81"
             column="33"/>
     </issue>
@@ -952,7 +952,7 @@
         errorLine1="val mediaSkipToNextCode = if (Build.VERSION.SDK_INT >= M) KEYCODE_MEDIA_NEXT else 87"
         errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/CustomActions.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/CustomActions.kt"
             line="82"
             column="31"/>
     </issue>
@@ -963,7 +963,7 @@
         errorLine1="val mediaSkipToPreviousCode = if (Build.VERSION.SDK_INT >= M) KEYCODE_MEDIA_PREVIOUS else 88"
         errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/CustomActions.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/CustomActions.kt"
             line="83"
             column="35"/>
     </issue>
@@ -974,7 +974,7 @@
         errorLine1="        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/download/DownloadNotificationWorker.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/download/DownloadNotificationWorker.kt"
             line="184"
             column="13"/>
     </issue>
@@ -985,7 +985,7 @@
         errorLine1="            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/download/DownloadNotificationWorker.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/download/DownloadNotificationWorker.kt"
             line="377"
             column="17"/>
     </issue>
@@ -996,7 +996,7 @@
         errorLine1="        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/MediaPlayerService.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/MediaPlayerService.kt"
             line="858"
             column="13"/>
     </issue>
@@ -1007,7 +1007,7 @@
         errorLine1="        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/download/MoveSyncLocationWorker.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/download/MoveSyncLocationWorker.kt"
             line="76"
             column="13"/>
     </issue>
@@ -1018,7 +1018,7 @@
         errorLine1="        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/download/MoveSyncLocationWorker.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/download/MoveSyncLocationWorker.kt"
             line="115"
             column="13"/>
     </issue>
@@ -1029,7 +1029,7 @@
         errorLine1="            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/download/MoveSyncLocationWorker.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/download/MoveSyncLocationWorker.kt"
             line="158"
             column="17"/>
     </issue>
@@ -1040,7 +1040,7 @@
         errorLine1="        private fun shouldCreateChannel() = Build.VERSION.SDK_INT >= Build.VERSION_CODES.O &amp;&amp; !nowPlayingChannelExists()"
         errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/NotificationBuilder.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/NotificationBuilder.kt"
             line="269"
             column="45"/>
     </issue>
@@ -1051,7 +1051,7 @@
         errorLine1="        @RequiresApi(Build.VERSION_CODES.O)"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/NotificationBuilder.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/NotificationBuilder.kt"
             line="271"
             column="9"/>
     </issue>
@@ -1062,7 +1062,7 @@
         errorLine1="        @RequiresApi(Build.VERSION_CODES.O)"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/NotificationBuilder.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/NotificationBuilder.kt"
             line="274"
             column="9"/>
     </issue>
@@ -1073,7 +1073,7 @@
         errorLine1="        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/util/PackageValidator.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/util/PackageValidator.kt"
             line="204"
             column="13"/>
     </issue>
@@ -1084,7 +1084,7 @@
         errorLine1="            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/util/PackageValidator.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/util/PackageValidator.kt"
             line="230"
             column="17"/>
     </issue>
@@ -2209,7 +2209,7 @@
         errorLine1="                            FormattableString.yes -> uncacheFiles()"
         errorLine2="                                                     ~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/bookdetails/AudiobookDetailsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/bookdetails/AudiobookDetailsViewModel.kt"
             line="371"
             column="54"/>
     </issue>
@@ -2220,7 +2220,7 @@
         errorLine1="                        hideBottomSheet()"
         errorLine2="                        ~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/bookdetails/AudiobookDetailsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/bookdetails/AudiobookDetailsViewModel.kt"
             line="376"
             column="25"/>
     </issue>
@@ -2231,7 +2231,7 @@
         errorLine1="                            hideBottomSheet()"
         errorLine2="                            ~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/bookdetails/AudiobookDetailsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/bookdetails/AudiobookDetailsViewModel.kt"
             line="504"
             column="29"/>
     </issue>
@@ -2242,7 +2242,7 @@
         errorLine1="                                setAudiobookWatched()"
         errorLine2="                                ~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/bookdetails/AudiobookDetailsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/bookdetails/AudiobookDetailsViewModel.kt"
             line="568"
             column="33"/>
     </issue>
@@ -2253,7 +2253,7 @@
         errorLine1="                                setAudiobookUnwatched()"
         errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/bookdetails/AudiobookDetailsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/bookdetails/AudiobookDetailsViewModel.kt"
             line="570"
             column="33"/>
     </issue>
@@ -2264,7 +2264,7 @@
         errorLine1="                        hideBottomSheet()"
         errorLine2="                        ~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/bookdetails/AudiobookDetailsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/bookdetails/AudiobookDetailsViewModel.kt"
             line="573"
             column="25"/>
     </issue>
@@ -2275,7 +2275,7 @@
         errorLine1="                                hideBottomSheet()"
         errorLine2="                                ~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/bookdetails/AudiobookDetailsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/bookdetails/AudiobookDetailsViewModel.kt"
             line="628"
             column="33"/>
     </issue>
@@ -2286,7 +2286,7 @@
         errorLine1="                        connectToServer()"
         errorLine2="                        ~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/application/ChronicleApplication.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/application/ChronicleApplication.kt"
             line="144"
             column="25"/>
     </issue>
@@ -2297,7 +2297,7 @@
         errorLine1="                        connectToServer()"
         errorLine2="                        ~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/application/ChronicleApplication.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/application/ChronicleApplication.kt"
             line="213"
             column="25"/>
     </issue>
@@ -2308,7 +2308,7 @@
         errorLine1="                        openAudiobookDetails(audiobook)"
         errorLine2="                        ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/collections/CollectionDetailsFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/collections/CollectionDetailsFragment.kt"
             line="90"
             column="25"/>
     </issue>
@@ -2319,7 +2319,7 @@
         errorLine1="                        openCollectionDetails(collection)"
         errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/collections/CollectionsFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/collections/CollectionsFragment.kt"
             line="81"
             column="25"/>
     </issue>
@@ -2330,7 +2330,7 @@
         errorLine1="                        openAudiobookDetails(audiobook)"
         errorLine2="                        ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/collections/CollectionsFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/collections/CollectionsFragment.kt"
             line="161"
             column="25"/>
     </issue>
@@ -2341,7 +2341,7 @@
         errorLine1="                        openAudiobookDetails(audiobook)"
         errorLine2="                        ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/collections/CollectionsFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/collections/CollectionsFragment.kt"
             line="161"
             column="25"/>
     </issue>
@@ -2352,7 +2352,7 @@
         errorLine1="                                viewModel.setSearchActive(true)"
         errorLine2="                                ~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/collections/CollectionsFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/collections/CollectionsFragment.kt"
             line="196"
             column="33"/>
     </issue>
@@ -2363,7 +2363,7 @@
         errorLine1="                                viewModel.setSearchActive(false)"
         errorLine2="                                ~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/collections/CollectionsFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/collections/CollectionsFragment.kt"
             line="201"
             column="33"/>
     </issue>
@@ -2374,7 +2374,7 @@
         errorLine1="                                    viewModel.search(newText)"
         errorLine2="                                    ~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/collections/CollectionsFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/collections/CollectionsFragment.kt"
             line="215"
             column="37"/>
     </issue>
@@ -2385,7 +2385,7 @@
         errorLine1="                        viewModel.jumpToChapter(chapter.startTimeOffset, chapter.trackId.toInt())"
         errorLine2="                        ~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/currentlyplaying/CurrentlyPlayingFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/currentlyplaying/CurrentlyPlayingFragment.kt"
             line="91"
             column="25"/>
     </issue>
@@ -2396,7 +2396,7 @@
         errorLine1="                    viewModel.isSliding = true"
         errorLine2="                    ~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/currentlyplaying/CurrentlyPlayingFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/currentlyplaying/CurrentlyPlayingFragment.kt"
             line="99"
             column="21"/>
     </issue>
@@ -2407,7 +2407,7 @@
         errorLine1="                    viewModel.isSliding = false"
         errorLine2="                    ~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/currentlyplaying/CurrentlyPlayingFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/currentlyplaying/CurrentlyPlayingFragment.kt"
             line="103"
             column="21"/>
     </issue>
@@ -2418,7 +2418,7 @@
         errorLine1="                    viewModel.seekTo(slider.value.toDouble() / slider.valueTo)"
         errorLine2="                    ~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/currentlyplaying/CurrentlyPlayingFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/currentlyplaying/CurrentlyPlayingFragment.kt"
             line="104"
             column="21"/>
     </issue>
@@ -2429,7 +2429,7 @@
         errorLine1="                            hideOptionsMenu()"
         errorLine2="                            ~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/currentlyplaying/CurrentlyPlayingViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/currentlyplaying/CurrentlyPlayingViewModel.kt"
             line="587"
             column="29"/>
     </issue>
@@ -2440,7 +2440,7 @@
         errorLine1="                                setSleepTimerTitle(FormattableString.from(R.string.sleep_timer))"
         errorLine2="                                ~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/currentlyplaying/CurrentlyPlayingViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/currentlyplaying/CurrentlyPlayingViewModel.kt"
             line="692"
             column="33"/>
     </issue>
@@ -2451,7 +2451,7 @@
         errorLine1="                    hideSleepTimerChooser()"
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/currentlyplaying/CurrentlyPlayingViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/currentlyplaying/CurrentlyPlayingViewModel.kt"
             line="699"
             column="21"/>
     </issue>
@@ -2462,7 +2462,7 @@
         errorLine1="                        hideSleepTimerChooser()"
         errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/currentlyplaying/CurrentlyPlayingViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/currentlyplaying/CurrentlyPlayingViewModel.kt"
             line="710"
             column="25"/>
     </issue>
@@ -2473,7 +2473,7 @@
         errorLine1="                    setSleepTimerTitle("
         errorLine2="                    ~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/currentlyplaying/CurrentlyPlayingViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/currentlyplaying/CurrentlyPlayingViewModel.kt"
             line="775"
             column="21"/>
     </issue>
@@ -2484,7 +2484,7 @@
         errorLine1="                    setSleepTimerTitle(FormattableString.from(R.string.sleep_timer))"
         errorLine2="                    ~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/currentlyplaying/CurrentlyPlayingViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/currentlyplaying/CurrentlyPlayingViewModel.kt"
             line="785"
             column="21"/>
     </issue>
@@ -2495,7 +2495,7 @@
         errorLine1="                        openAudiobookDetails(audiobook)"
         errorLine2="                        ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/library/LibraryFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/library/LibraryFragment.kt"
             line="85"
             column="25"/>
     </issue>
@@ -2506,7 +2506,7 @@
         errorLine1="                        openAudiobookDetails(audiobook)"
         errorLine2="                        ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/library/LibraryFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/library/LibraryFragment.kt"
             line="163"
             column="25"/>
     </issue>
@@ -2517,7 +2517,7 @@
         errorLine1="                        openAudiobookDetails(audiobook)"
         errorLine2="                        ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/library/LibraryFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/library/LibraryFragment.kt"
             line="163"
             column="25"/>
     </issue>
@@ -2528,7 +2528,7 @@
         errorLine1="                        viewModel.setFilterMenuVisible(newState == STATE_EXPANDED)"
         errorLine2="                        ~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/library/LibraryFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/library/LibraryFragment.kt"
             line="211"
             column="25"/>
     </issue>
@@ -2539,7 +2539,7 @@
         errorLine1="                                viewModel.setSearchActive(true)"
         errorLine2="                                ~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/library/LibraryFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/library/LibraryFragment.kt"
             line="251"
             column="33"/>
     </issue>
@@ -2550,7 +2550,7 @@
         errorLine1="                                viewModel.setSearchActive(false)"
         errorLine2="                                ~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/library/LibraryFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/library/LibraryFragment.kt"
             line="258"
             column="33"/>
     </issue>
@@ -2561,7 +2561,7 @@
         errorLine1="                                    viewModel.search(newText)"
         errorLine2="                                    ~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/library/LibraryFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/library/LibraryFragment.kt"
             line="272"
             column="37"/>
     </issue>
@@ -2572,7 +2572,7 @@
         errorLine1="                            viewModel.setFilterMenuVisible("
         errorLine2="                            ~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/library/LibraryFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/library/LibraryFragment.kt"
             line="283"
             column="29"/>
     </issue>
@@ -2583,7 +2583,7 @@
         errorLine1="                                viewModel.isFilterShown.value?.not() ?: false,"
         errorLine2="                                ~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/library/LibraryFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/library/LibraryFragment.kt"
             line="284"
             column="33"/>
     </issue>
@@ -2594,7 +2594,7 @@
         errorLine1="                            viewModel.promptDownloadAll()"
         errorLine2="                            ~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/library/LibraryFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/library/LibraryFragment.kt"
             line="289"
             column="29"/>
     </issue>
@@ -2605,7 +2605,7 @@
         errorLine1="                            FormattableString.yes -> downloadAll(tracks)"
         errorLine2="                                                     ~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/library/LibraryViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/library/LibraryViewModel.kt"
             line="275"
             column="54"/>
     </issue>
@@ -2616,7 +2616,7 @@
         errorLine1="                if (viewModel.currentlyPlayingLayoutState.value == EXPANDED) {"
         errorLine2="                    ~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/application/MainActivity.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/application/MainActivity.kt"
             line="160"
             column="21"/>
     </issue>
@@ -2627,7 +2627,7 @@
         errorLine1="                    viewModel.setBottomSheetState(COLLAPSED)"
         errorLine2="                    ~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/application/MainActivity.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/application/MainActivity.kt"
             line="161"
             column="21"/>
     </issue>
@@ -2638,7 +2638,7 @@
         errorLine1="                            viewModel.onCurrentlyPlayingHandleDragged()"
         errorLine2="                            ~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/application/MainActivity.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/application/MainActivity.kt"
             line="212"
             column="29"/>
     </issue>
@@ -2649,7 +2649,7 @@
         errorLine1="                        viewModel.showUserMessage(userMessage)"
         errorLine2="                        ~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/application/MainActivity.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/application/MainActivity.kt"
             line="298"
             column="25"/>
     </issue>
@@ -2660,7 +2660,7 @@
         errorLine1="                setSessionCustomErrorMessage(error.message)"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/MediaPlayerService.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/MediaPlayerService.kt"
             line="723"
             column="17"/>
     </issue>
@@ -2671,7 +2671,7 @@
         errorLine1="                updateSessionPlaybackState()"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/MediaPlayerService.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/MediaPlayerService.kt"
             line="724"
             column="17"/>
     </issue>
@@ -2682,7 +2682,7 @@
         errorLine1="                updateSessionPlaybackState()"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/MediaPlayerService.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/MediaPlayerService.kt"
             line="731"
             column="17"/>
     </issue>
@@ -2693,7 +2693,7 @@
         errorLine1="                updateSessionPlaybackState()"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/MediaPlayerService.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/MediaPlayerService.kt"
             line="735"
             column="17"/>
     </issue>
@@ -2704,7 +2704,7 @@
         errorLine1="                    updateSessionMetadataFromPlayer(it)"
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/MediaPlayerService.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/MediaPlayerService.kt"
             line="743"
             column="21"/>
     </issue>
@@ -2715,7 +2715,7 @@
         errorLine1="                    updateSessionPlaybackState()"
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/MediaPlayerService.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/MediaPlayerService.kt"
             line="744"
             column="21"/>
     </issue>
@@ -2726,7 +2726,7 @@
         errorLine1="                currentPlayer?.let { updateSessionMetadataFromPlayer(it) }"
         errorLine2="                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/MediaPlayerService.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/MediaPlayerService.kt"
             line="778"
             column="38"/>
     </issue>
@@ -2737,7 +2737,7 @@
         errorLine1="                    setSessionCustomErrorMessage(null)"
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/MediaPlayerService.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/MediaPlayerService.kt"
             line="783"
             column="21"/>
     </issue>
@@ -2748,7 +2748,7 @@
         errorLine1="                updateSessionPlaybackState()"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/MediaPlayerService.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/MediaPlayerService.kt"
             line="785"
             column="17"/>
     </issue>
@@ -2759,7 +2759,7 @@
         errorLine1="                                showOptionsMenu("
         errorLine2="                                ~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsViewModel.kt"
             line="209"
             column="33"/>
     </issue>
@@ -2770,7 +2770,7 @@
         errorLine1="                                showOptionsMenu("
         errorLine2="                                ~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsViewModel.kt"
             line="299"
             column="33"/>
     </issue>
@@ -2781,7 +2781,7 @@
         errorLine1="                                showOptionsMenu("
         errorLine2="                                ~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsViewModel.kt"
             line="399"
             column="33"/>
     </issue>
@@ -2792,7 +2792,7 @@
         errorLine1="                                                    setSyncLocation(syncLoc)"
         errorLine2="                                                    ~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsViewModel.kt"
             line="431"
             column="53"/>
     </issue>
@@ -2803,7 +2803,7 @@
         errorLine1="                                showOptionsMenu("
         errorLine2="                                ~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsViewModel.kt"
             line="450"
             column="33"/>
     </issue>
@@ -2814,7 +2814,7 @@
         errorLine1="                                showOptionsMenu("
         errorLine2="                                ~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsViewModel.kt"
             line="548"
             column="33"/>
     </issue>
@@ -2825,7 +2825,7 @@
         errorLine1="                                showOptionsMenu("
         errorLine2="                                ~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsViewModel.kt"
             line="617"
             column="33"/>
     </issue>
@@ -2836,7 +2836,7 @@
         errorLine1="                                        clearConfig(RETURN_TO_LIBRARY_CHOOSER)"
         errorLine2="                                        ~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsViewModel.kt"
             line="683"
             column="41"/>
     </issue>
@@ -2847,7 +2847,7 @@
         errorLine1="                                    showOptionsMenu("
         errorLine2="                                    ~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsViewModel.kt"
             line="686"
             column="37"/>
     </issue>
@@ -2858,7 +2858,7 @@
         errorLine1="                                                        clearConfig("
         errorLine2="                                                        ~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsViewModel.kt"
             line="704"
             column="57"/>
     </issue>
@@ -2869,7 +2869,7 @@
         errorLine1="                                                        clearConfig("
         errorLine2="                                                        ~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsViewModel.kt"
             line="710"
             column="57"/>
     </issue>
@@ -2880,7 +2880,7 @@
         errorLine1="                                        clearConfig(RETURN_TO_SERVER_CHOOSER)"
         errorLine2="                                        ~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsViewModel.kt"
             line="736"
             column="41"/>
     </issue>
@@ -2891,7 +2891,7 @@
         errorLine1="                                    showOptionsMenu("
         errorLine2="                                    ~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsViewModel.kt"
             line="739"
             column="37"/>
     </issue>
@@ -2902,7 +2902,7 @@
         errorLine1="                                                        clearConfig(RETURN_TO_SERVER_CHOOSER)"
         errorLine2="                                                        ~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsViewModel.kt"
             line="753"
             column="57"/>
     </issue>
@@ -2913,7 +2913,7 @@
         errorLine1="                                        clearConfig(RETURN_TO_USER_CHOOSER)"
         errorLine2="                                        ~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsViewModel.kt"
             line="776"
             column="41"/>
     </issue>
@@ -2924,7 +2924,7 @@
         errorLine1="                                    showOptionsMenu("
         errorLine2="                                    ~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsViewModel.kt"
             line="779"
             column="37"/>
     </issue>
@@ -2935,7 +2935,7 @@
         errorLine1="                                                        clearConfig(RETURN_TO_USER_CHOOSER)"
         errorLine2="                                                        ~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsViewModel.kt"
             line="793"
             column="57"/>
     </issue>
@@ -2946,7 +2946,7 @@
         errorLine1="                                        clearConfig(RETURN_TO_LOGIN)"
         errorLine2="                                        ~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsViewModel.kt"
             line="816"
             column="41"/>
     </issue>
@@ -2957,7 +2957,7 @@
         errorLine1="                                    showOptionsMenu("
         errorLine2="                                    ~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsViewModel.kt"
             line="822"
             column="37"/>
     </issue>
@@ -2968,7 +2968,7 @@
         errorLine1="                                    clearConfig(clearDownloads = false)"
         errorLine2="                                    ~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsViewModel.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsViewModel.kt"
             line="914"
             column="37"/>
     </issue>
@@ -3563,7 +3563,7 @@
         errorLine1="        Uri.parse(&quot;android.resource://${BuildConfig.APPLICATION_ID}/$iconRes&quot;),"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/player/MediaItemExt.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/player/MediaItemExt.kt"
             line="24"
             column="9"/>
     </issue>
@@ -3574,7 +3574,7 @@
         errorLine1="            return Uri.parse("
         errorLine2="                   ^">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/sources/plex/PlexLoginRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/sources/plex/PlexLoginRepo.kt"
             line="107"
             column="20"/>
     </issue>
@@ -3585,7 +3585,7 @@
         errorLine1="                        Intent(Intent.ACTION_VIEW, Uri.parse(it.getContentIfNotHandled())),"
         errorLine2="                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/features/settings/SettingsFragment.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/features/settings/SettingsFragment.kt"
             line="110"
             column="52"/>
     </issue>
@@ -3596,7 +3596,7 @@
         errorLine1="                    prefs.edit().putString(PREFS_UUID_KEY, generatedUUID).commit()"
         errorLine2="                    ~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/sources/plex/SharedPreferencesPlexPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/sources/plex/SharedPreferencesPlexPrefsRepo.kt"
             line="77"
             column="21"/>
     </issue>
@@ -3607,7 +3607,7 @@
         errorLine1="                prefs.edit().putString(PREFS_AUTH_TOKEN_KEY, value).commit()"
         errorLine2="                ~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/sources/plex/SharedPreferencesPlexPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/sources/plex/SharedPreferencesPlexPrefsRepo.kt"
             line="88"
             column="17"/>
     </issue>
@@ -3618,7 +3618,7 @@
         errorLine1="                    prefs.edit().remove(PREFS_USER).commit()"
         errorLine2="                    ~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/sources/plex/SharedPreferencesPlexPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/sources/plex/SharedPreferencesPlexPrefsRepo.kt"
             line="103"
             column="21"/>
     </issue>
@@ -3629,7 +3629,7 @@
         errorLine1="                prefs.edit().putString(PREFS_USER, userString).commit()"
         errorLine2="                ~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/sources/plex/SharedPreferencesPlexPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/sources/plex/SharedPreferencesPlexPrefsRepo.kt"
             line="107"
             column="17"/>
     </issue>
@@ -3640,7 +3640,7 @@
         errorLine1="                    prefs.edit()"
         errorLine2="                    ~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/sources/plex/SharedPreferencesPlexPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/sources/plex/SharedPreferencesPlexPrefsRepo.kt"
             line="123"
             column="21"/>
     </issue>
@@ -3651,7 +3651,7 @@
         errorLine1="                prefs.edit()"
         errorLine2="                ~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/sources/plex/SharedPreferencesPlexPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/sources/plex/SharedPreferencesPlexPrefsRepo.kt"
             line="128"
             column="17"/>
     </issue>
@@ -3662,7 +3662,7 @@
         errorLine1="                    prefs.edit()"
         errorLine2="                    ~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/sources/plex/SharedPreferencesPlexPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/sources/plex/SharedPreferencesPlexPrefsRepo.kt"
             line="152"
             column="21"/>
     </issue>
@@ -3673,7 +3673,7 @@
         errorLine1="                prefs.edit()"
         errorLine2="                ~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/sources/plex/SharedPreferencesPlexPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/sources/plex/SharedPreferencesPlexPrefsRepo.kt"
             line="161"
             column="17"/>
     </issue>
@@ -3684,7 +3684,7 @@
         errorLine1="                prefs.edit().putLong(PREFS_TEMP_ID, value).commit()"
         errorLine2="                ~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/sources/plex/SharedPreferencesPlexPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/sources/plex/SharedPreferencesPlexPrefsRepo.kt"
             line="183"
             column="17"/>
     </issue>
@@ -3695,7 +3695,7 @@
         errorLine1="            prefs.edit()"
         errorLine2="            ~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/sources/plex/SharedPreferencesPlexPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/sources/plex/SharedPreferencesPlexPrefsRepo.kt"
             line="195"
             column="13"/>
     </issue>
@@ -3706,7 +3706,7 @@
         errorLine1="                    sharedPreferences.edit()"
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="183"
             column="21"/>
     </issue>
@@ -3717,7 +3717,7 @@
         errorLine1="                sharedPreferences.edit().putString("
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="194"
             column="17"/>
     </issue>
@@ -3728,7 +3728,7 @@
         errorLine1="            set(value) = sharedPreferences.edit().putString(KEY_BOOK_COVER_STYLE, value).apply()"
         errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="202"
             column="26"/>
     </issue>
@@ -3739,7 +3739,7 @@
         errorLine1="            set(value) = sharedPreferences.edit().putBoolean(KEY_OFFLINE_MODE, value).apply()"
         errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="207"
             column="26"/>
     </issue>
@@ -3750,7 +3750,7 @@
         errorLine1="            set(value) = sharedPreferences.edit().putLong(KEY_LAST_REFRESH, value).apply()"
         errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="212"
             column="26"/>
     </issue>
@@ -3761,7 +3761,7 @@
         errorLine1="            set(value) = sharedPreferences.edit().putLong(KEY_REFRESH_RATE, value).apply()"
         errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="217"
             column="26"/>
     </issue>
@@ -3772,7 +3772,7 @@
         errorLine1="            set(value) = sharedPreferences.edit().putLong(KEY_JUMP_FORWARD_SECONDS, value).apply()"
         errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="222"
             column="26"/>
     </issue>
@@ -3783,7 +3783,7 @@
         errorLine1="            set(value) = sharedPreferences.edit().putLong(KEY_JUMP_BACKWARD_SECONDS, value).apply()"
         errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="227"
             column="26"/>
     </issue>
@@ -3794,7 +3794,7 @@
         errorLine1="            set(value) = sharedPreferences.edit().putFloat(KEY_PLAYBACK_SPEED, value).apply()"
         errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="232"
             column="26"/>
     </issue>
@@ -3805,7 +3805,7 @@
         errorLine1="            set(value) = sharedPreferences.edit().putBoolean(KEY_SKIP_SILENCE, value).apply()"
         errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="237"
             column="26"/>
     </issue>
@@ -3816,7 +3816,7 @@
         errorLine1="            set(value) = sharedPreferences.edit().putBoolean(KEY_AUTO_REWIND_ENABLED, value).apply()"
         errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="242"
             column="26"/>
     </issue>
@@ -3827,7 +3827,7 @@
         errorLine1="            ) = sharedPreferences.edit().putBoolean(KEY_SHAKE_TO_SNOOZE_ENABLED, value).apply()"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="249"
             column="17"/>
     </issue>
@@ -3838,7 +3838,7 @@
         errorLine1="            set(value) = sharedPreferences.edit().putBoolean(KEY_PAUSE_ON_FOCUS_LOST, value).apply()"
         errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="254"
             column="26"/>
     </issue>
@@ -3849,7 +3849,7 @@
         errorLine1="            set(value) = sharedPreferences.edit().putBoolean(KEY_ALLOW_AUTO, value).apply()"
         errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="259"
             column="26"/>
     </issue>
@@ -3860,7 +3860,7 @@
         errorLine1="                sharedPreferences.edit().putBoolean("
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="273"
             column="17"/>
     </issue>
@@ -3871,7 +3871,7 @@
         errorLine1="                sharedPreferences.edit().putString(KEY_BOOK_SORT_BY, value).apply()"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="286"
             column="17"/>
     </issue>
@@ -3882,7 +3882,7 @@
         errorLine1="                sharedPreferences.edit().putBoolean(KEY_IS_LIBRARY_SORT_DESCENDING, value).apply()"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="293"
             column="17"/>
     </issue>
@@ -3893,7 +3893,7 @@
         errorLine1="            ) = sharedPreferences.edit().putBoolean(KEY_HIDE_PLAYED_AUDIOBOOKS, value).apply()"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="301"
             column="17"/>
     </issue>
@@ -3904,7 +3904,7 @@
         errorLine1="                sharedPreferences.edit().putString(KEY_LIBRARY_MEDIA_TYPE, value).apply()"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="316"
             column="17"/>
     </issue>
@@ -3915,7 +3915,7 @@
         errorLine1="                sharedPreferences.edit().putString(KEY_LIBRARY_VIEW_STYLE, value).apply()"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="326"
             column="17"/>
     </issue>
@@ -3926,7 +3926,7 @@
         errorLine1="            ) = sharedPreferences.edit().putBoolean(KEY_DEBUG_DISABLE_PROGRESS, value).apply()"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="338"
             column="17"/>
     </issue>
@@ -3937,7 +3937,7 @@
         errorLine1="            sharedPreferences.edit().putBoolean(key, value).apply()"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="344"
             column="13"/>
     </issue>
@@ -3948,7 +3948,7 @@
         errorLine1="            sharedPreferences.edit().clear().apply()"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/java/io/github/mjohnson7cd/audiobook/data/local/SharedPreferencesPrefsRepo.kt"
+            file="src/main/java/io/github/mjohnson7cd/chronicleauto/data/local/SharedPreferencesPrefsRepo.kt"
             line="362"
             column="13"/>
     </issue>

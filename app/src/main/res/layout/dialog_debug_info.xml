@@ -6,7 +6,7 @@
     <data>
         <variable
             name="viewModel"
-            type="io.github.mjohnson7cd.audiobook.features.settings.DebugInfoViewModel" />
+            type="io.github.mjohnson7cd.chronicleauto.features.settings.DebugInfoViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

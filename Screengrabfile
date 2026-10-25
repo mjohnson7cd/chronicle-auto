@@ -3,8 +3,8 @@
 
 # APK path - uses debug APK by default
 # Screengrab will install both the app APK and test APK
-app_package_name('io.github.mjohnson7cd.audiobook')
-use_tests_in_packages(['io.github.mjohnson7cd.audiobook.screenshot'])
+app_package_name('io.github.mjohnson7cd.chronicleauto')
+use_tests_in_packages(['io.github.mjohnson7cd.chronicleauto.screenshot'])
 
 # Locales to generate screenshots for
 # Start with English, add more as needed: 'de-DE', 'es-ES', 'fr-FR', etc.
@@ -33,7 +33,7 @@ reinstall_app(true)
 # specific_device('emulator-5554')
 
 # Test instrumentation runner
-test_instrumentation_runner('io.github.mjohnson7cd.audiobook.application.ChronicleTestRunner')
+test_instrumentation_runner('io.github.mjohnson7cd.chronicleauto.application.ChronicleTestRunner')
 
 # Exit on test failure
 exit_on_test_failure(true)

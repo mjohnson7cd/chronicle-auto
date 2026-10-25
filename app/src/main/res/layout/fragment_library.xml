@@ -7,17 +7,17 @@
 
         <variable
             name="viewModel"
-            type="io.github.mjohnson7cd.audiobook.features.library.LibraryViewModel" />
+            type="io.github.mjohnson7cd.chronicleauto.features.library.LibraryViewModel" />
 
         <variable
             name="plexConfig"
-            type="io.github.mjohnson7cd.audiobook.data.sources.plex.PlexConfig" />
+            type="io.github.mjohnson7cd.chronicleauto.data.sources.plex.PlexConfig" />
 
         <import type="android.view.View" />
 
-        <import type="io.github.mjohnson7cd.audiobook.data.model.Audiobook" />
+        <import type="io.github.mjohnson7cd.chronicleauto.data.model.Audiobook" />
 
-        <import type="io.github.mjohnson7cd.audiobook.data.sources.plex.model.MediaTypes" />
+        <import type="io.github.mjohnson7cd.chronicleauto.data.sources.plex.model.MediaTypes" />
 
         <import type="androidx.recyclerview.widget.GridLayoutManager" />
 
@@ -135,7 +135,7 @@
                     android:visibility="@{viewModel.searchResults.isEmpty() &amp;&amp; viewModel.isSearchActive() &amp;&amp; !viewModel.isQueryEmpty() ? View.VISIBLE : View.GONE}" />
             </LinearLayout>
 
-            <io.github.mjohnson7cd.audiobook.views.BottomSheetChooser
+            <io.github.mjohnson7cd.chronicleauto.views.BottomSheetChooser
                 android:id="@+id/bottom_sheet_chooser"
                 bottomChooserState="@{viewModel.bottomChooserState}"
                 android:layout_width="match_parent"

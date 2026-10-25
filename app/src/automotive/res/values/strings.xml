@@ -39,7 +39,7 @@
     <string name="car_close">Close</string>
 
     <!-- Car settings -->
-    <string name="car_settings_title">Audiobook Auto settings</string>
+    <string name="car_settings_title">Chronicle Auto settings</string>
     <string name="car_settings_account">Account</string>
     <string name="car_settings_signed_in_as">Signed in as %1$s</string>
     <string name="car_settings_library">Library: %1$s on %2$s</string>

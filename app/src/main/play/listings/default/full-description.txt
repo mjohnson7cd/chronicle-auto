@@ -1,4 +1,4 @@
-Stream or download audiobooks from your Plex server with Audiobook Auto, an audiobook player for Plex built for Android Auto.
+Stream or download audiobooks from your Plex server with Chronicle Auto, an audiobook player for Plex built for Android Auto.
 
 <b>📚 Key Features</b>
 
@@ -13,7 +13,7 @@ Stream or download audiobooks from your Plex server with Audiobook Auto, an audi
 
 <b>📖 Made for Plex Users</b>
 
-Audiobook Auto is designed for Plex users who want a dedicated audiobook player for long-form listening at home and on the road. Connect to your Plex server and enjoy your entire audiobook collection with an interface optimized for audiobooks and Android Auto.
+Chronicle Auto is designed for Plex users who want a dedicated audiobook player for long-form listening at home and on the road. Connect to your Plex server and enjoy your entire audiobook collection with an interface optimized for audiobooks and Android Auto.
 
 <b>🎯 Requirements</b>
 
@@ -25,11 +25,11 @@ Audiobook Auto is designed for Plex users who want a dedicated audiobook player 
 <b>🔗 Useful Resources</b>
 
 • Plex Audiobook Guide: https://github.com/seanap/Plex-Audiobook-Guide
-• Source code: https://github.com/mjohnson7cd/audiobook-auto
-• Issues: https://github.com/mjohnson7cd/audiobook-auto/issues
+• Source code: https://github.com/mjohnson7cd/chronicle-auto
+• Issues: https://github.com/mjohnson7cd/chronicle-auto/issues
 
 <b>🙏 Credits and License</b>
 
-Audiobook Auto is free, open-source software licensed under the GNU General Public License v3.0 (GPLv3). It is a fork of Chronicle by Fabio Germann (https://github.com/fabiogermann/chronicle), which was originally created by Matt Vaughn (https://github.com/mattttvaughn/chronicle). Many thanks to the original authors and contributors.
+Chronicle Auto is free, open-source software licensed under the GNU General Public License v3.0 (GPLv3). It is a fork of Chronicle by Fabio Germann (https://github.com/fabiogermann/chronicle), which was originally created by Matt Vaughn (https://github.com/mattttvaughn/chronicle). Many thanks to the original authors and contributors.
 
-Audiobook Auto is an independent project and is not affiliated with or endorsed by Plex, Inc. or the Chronicle project.
+Chronicle Auto is an independent project and is not affiliated with or endorsed by Plex, Inc. or the Chronicle project.

@@ -1175,7 +1175,10 @@ class MediaPlayerService :
                                             )
                                         }
                                     }
-                                result.sendResult(mutableListOf(errorMessage))
+                                // AAOS: a null root makes the car show its full-screen sign-in error,
+                                // which it closes once the error state clears. A non-null list makes it
+                                // use a modal dialog instead, which it never auto-dismisses after sign-in.
+                                result.sendResult(if (signInResolutionExtras != null) null else mutableListOf(errorMessage))
                                 return@withContext
                             }
 

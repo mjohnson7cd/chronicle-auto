@@ -1,6 +1,6 @@
 <resources>
     <!-- Main activity/shared strings -->
-    <string name="app_name">Audiobook Auto</string>
+    <string name="app_name">Chronicle Auto</string>
     <string name="attribution_media_playback">Media playback and library synchronization</string>
     <string name="available_offline">Available offline</string>
     <string name="disable_offline_mode">Disable offline mode</string>
@@ -247,7 +247,7 @@
     <string name="settings_licenses_explanation">Open source libraries used by Chronicle</string>
     <string name="settings_subreddit_title">Report an issue</string>
     <string name="settings_subreddit_explanation">Share bug reports and feature requests on GitHub</string>
-    <string name="settings_github_title">github.com/mjohnson7cd/audiobook-auto</string>
+    <string name="settings_github_title">github.com/mjohnson7cd/chronicle-auto</string>
     <string name="settings_github_explanation">Chronicle is open source!</string>
     <string name="settings_clear_downloads_warning">This will delete your downloaded files. Continue?</string>
     <string name="settings_shake_to_snooze_title">Shake to snooze</string>
@@ -291,7 +291,7 @@
     <string name="auto_category_library">Library</string>
     <string name="auto_favorites_empty">No favorites yet</string>
     <string name="auto_access_error_not_logged_in">Not logged in to Chronicle</string>
-    <string name="auto_not_logged_in_subtitle">Open Audiobook Auto on your phone to log in</string>
+    <string name="auto_not_logged_in_subtitle">Open Chronicle Auto on your phone to log in</string>
     <string name="auto_access_error_no_server_chosen">No server chosen. Please return to Chronicle and choose a server and library</string>
     <string name="auto_access_error_no_user_chosen">No user chosen. Please return to Chronicle and finish logging in</string>
     <string name="auto_access_error_no_library_chosen">No library chosen. Please return to Chronicle and choose a library</string>
